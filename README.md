@@ -1,1 +1,5 @@
-# Detecting-Label-Poisoning-in-Continuous-Federated-Learning-Using-Gradient-Trajectory-
+# Is It Worth Storing Historical Gradients for Label Poisoning Attack in Federated Learning
+
+Federated Learning (FL) is a robust machine learning framework allowing multiple entities to collaboratively train a global model without exposing their sensitive data. However, FL’s inherent design makes it susceptible to adversarial attacks, making detection and mitigation crucial for the model’s integrity and reliability. Traditionally, it was thought that tracking historical weight gradients during training could establish baseline behavior and identify anomalies suggestive of adversarial intrusions. 
+
+Yet, our research challenges this belief, suggesting that focusing on current weight data is more effective for detecting attacks, such as label flip attacks. This method not only boosts detection accuracy but also enhances storage efficiency, as it avoids the need to store extensive weight gradient histories. Moreover, this approach to data minimization not only augments privacy by concentrating on key data but also lowers the risk of exposing client data, which is inline with privacy-focused machine learning methodologies.
